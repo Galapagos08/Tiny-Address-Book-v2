@@ -33,7 +33,7 @@
 }
 
 - (NSString *)description {
-    return _name;
+    return [NSString stringWithFormat:@"Name:  %@Email:  %@Buddy:  %@", [self name], [self email], [self buddy]];
 }
 
 - (NSString *)email {

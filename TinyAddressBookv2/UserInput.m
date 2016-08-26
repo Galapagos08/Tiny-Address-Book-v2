@@ -38,7 +38,7 @@ NSNumber *getNumberFromUser(int maxValidChoice) {
     }
     return @(choice);
 }
-Person* userEntry() {
+Person* getCardFromUser() {
     NSString *name = getStringFromUser(50, @"\n\nPlease enter the name of the person you wish to add to the address book:\n\n");
     NSString *email = getStringFromUser(100, @"\n\nNow please enter the person's email address\n\n");
     NSString *buddy = getStringFromUser(50, @"\n\nNow please enter the name of the person's friend:\n\n");

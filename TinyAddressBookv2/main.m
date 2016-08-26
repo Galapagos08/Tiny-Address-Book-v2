@@ -17,10 +17,11 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
         
         BOOL shouldContinue = YES;
+ 
+        NSMutableArray *cards = [NSMutableArray array];
         
         while (shouldContinue) {
-            Person *person = userEntry();
-            NSMutableArray *cards = [NSMutableArray array];
+            Person *person = getCardFromUser();
             [cards addObject:person];
             NSMutableString *string = [NSMutableString string];
             NSInteger lastIndex = cards.count - 1;
@@ -36,6 +37,10 @@ int main(int argc, const char * argv[]) {
             NSLog(@"\nWould you like to make another entry?\n(0 = NO; 1 = YES)\n");
             NSNumber *anotherEntry = getNumberFromUser(1);
             shouldContinue = [anotherEntry intValue];
+        }
+        NSLog(@"\n\nAll entries:\n\n");
+        for (Person *person in cards) {
+            NSLog(@"\n\n%@\n", person);
         }
     }
     return 0;

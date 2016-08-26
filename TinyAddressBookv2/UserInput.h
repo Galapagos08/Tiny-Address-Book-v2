@@ -13,5 +13,5 @@ NSString *getStringFromUser(int stringLength, NSString *prompt);
 
 NSNumber *getNumberFromUser(int maxValidChoice);
 
-Person* userEntry();
+Person* getCardFromUser();
 
