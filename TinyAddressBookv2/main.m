@@ -6,12 +6,37 @@
 //  Copyright © 2016 Dan Esrey. All rights reserved.
 //
 
+
 #import <Foundation/Foundation.h>
+#import "Person.h"
+#import "Userinput.h"
+
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        
+        BOOL shouldContinue = YES;
+        
+        while (shouldContinue) {
+            Person *person = userEntry();
+            NSMutableArray *cards = [NSMutableArray array];
+            [cards addObject:person];
+            NSMutableString *string = [NSMutableString string];
+            NSInteger lastIndex = cards.count - 1;
+            NSInteger index = 0;
+            for (Person *person in cards) {
+                [string appendFormat:@"Name:  %@Email:  %@Buddy:  %@", person.name, person.email, person.buddy];
+                
+                if (index++ < lastIndex) {
+                    [string appendString:@"\n"];
+                }
+                NSLog(@"\n%@", string);
+            }
+            NSLog(@"\nWould you like to make another entry?\n(0 = NO; 1 = YES)\n");
+            NSNumber *anotherEntry = getNumberFromUser(1);
+            shouldContinue = [anotherEntry intValue];
+        }
     }
     return 0;
 }

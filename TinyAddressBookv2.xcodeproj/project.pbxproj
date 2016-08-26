@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F738D50A1D70B2FA008EC757 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F738D5091D70B2FA008EC757 /* main.m */; };
+		F738D5121D70B315008EC757 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = F738D5111D70B315008EC757 /* Person.m */; };
+		F738D5151D70BB07008EC757 /* UserInput.m in Sources */ = {isa = PBXBuildFile; fileRef = F738D5141D70BB07008EC757 /* UserInput.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		F738D5061D70B2FA008EC757 /* TinyAddressBookv2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TinyAddressBookv2; sourceTree = BUILT_PRODUCTS_DIR; };
 		F738D5091D70B2FA008EC757 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F738D5101D70B315008EC757 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		F738D5111D70B315008EC757 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		F738D5131D70BB07008EC757 /* UserInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInput.h; sourceTree = "<group>"; };
+		F738D5141D70BB07008EC757 /* UserInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInput.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				F738D5091D70B2FA008EC757 /* main.m */,
+				F738D5101D70B315008EC757 /* Person.h */,
+				F738D5111D70B315008EC757 /* Person.m */,
+				F738D5131D70BB07008EC757 /* UserInput.h */,
+				F738D5141D70BB07008EC757 /* UserInput.m */,
 			);
 			path = TinyAddressBookv2;
 			sourceTree = "<group>";
@@ -121,6 +131,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F738D50A1D70B2FA008EC757 /* main.m in Sources */,
+				F738D5121D70B315008EC757 /* Person.m in Sources */,
+				F738D5151D70BB07008EC757 /* UserInput.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +261,7 @@
 				F738D50F1D70B2FA008EC757 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
